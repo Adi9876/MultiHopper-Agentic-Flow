@@ -1,0 +1,28 @@
+{
+  "name": "multihopper-test-harness",
+  "version": "1.0.0",
+  "description": "MultiHopper agentic integration test harness and mock server",
+  "main": "dist/agent.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/mockServer.ts",
+    "test": "node --loader ts-node/esm tests/agent.test.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "axios": "^1.7.9",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "tweetnacl": "^1.0.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.5",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
