@@ -3,3 +3,4 @@ test-state-*.json
 dist
 .multihopper-agent-state.json
 
+config.bat
